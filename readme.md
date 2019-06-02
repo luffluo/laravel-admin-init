@@ -25,7 +25,7 @@ php storage:link
 
 ### 更改项目所有者为www用户/组
 ```
-chown -R www:www datitong-yk
+chown -R www:www datitong-live
 ```
 
 ### 后台管理员账号
