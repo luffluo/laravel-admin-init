@@ -38,13 +38,6 @@ class IseedAdminCommand extends Command
      */
     public function handle()
     {
-        Artisan::call('iseed admin_users,admin_roles,admin_permissions,admin_menu,admin_user_permissions,admin_role_users,admin_role_permissions,admin_role_menu --force');
-        // Artisan::call('iseed admin_roles --force');
-        // Artisan::call('iseed admin_permissions --force');
-        // Artisan::call('iseed admin_menu --force');
-        // Artisan::call('iseed admin_user_permissions --force');
-        // Artisan::call('iseed admin_role_users --force');
-        // Artisan::call('iseed admin_role_permissions --force');
-        // Artisan::call('iseed admin_role_menu --force');
+        Artisan::call('iseed admin_menu --force');
     }
 }
