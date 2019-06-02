@@ -40,3 +40,12 @@ crontab -e // 编辑服务器定时任务
 // 添加下面命令 保存退出
 * * * * * /usr/local/php/bin/php /data/www/datitong-live/artisan schedule:run > /dev/null
 ```
+
+## 更新后台菜单
+```
+// 生成菜单
+php artisan admin:menu-iseed
+
+// 更新菜单
+php artisan admin:menu-update
+```
