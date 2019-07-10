@@ -11,7 +11,7 @@ production 生产环境分支 pre-production 下游分支
 
 ### 安装
 ```
-git clone git@github.com:luffluo/laravel-admin-init.git.git
+git clone git@github.com:luffluo/laravel-admin-init.git
 cd laravel-admin-init
 
 composer install --prefer-dist
