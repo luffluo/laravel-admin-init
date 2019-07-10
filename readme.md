@@ -11,8 +11,8 @@ production 生产环境分支 pre-production 下游分支
 
 ### 安装
 ```
-git clone git@git.yokitalk.com:luojingying/datitong-live.git
-cd datitong-live
+git clone git@github.com:luffluo/laravel-admin-init.git.git
+cd laravel-admin-init
 
 composer install --prefer-dist
 
@@ -30,7 +30,7 @@ php storage:link
 
 ### 更改项目所有者为www用户/组
 ```
-chown -R www:www datitong-live
+chown -R www:www laravel-admin-init
 ```
 
 ### 后台管理员账号
@@ -43,7 +43,7 @@ chown -R www:www datitong-live
 ```
 crontab -e // 编辑服务器定时任务
 // 添加下面命令 保存退出
-* * * * * /usr/local/php/bin/php /data/www/datitong-live/artisan schedule:run > /dev/null
+* * * * * /usr/local/php/bin/php /data/www/laravel-admin-init/artisan schedule:run > /dev/null
 ```
 
 ## 更新后台菜单
