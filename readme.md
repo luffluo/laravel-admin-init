@@ -1,4 +1,4 @@
-# 名师直播课
+# Project Name
 
 ### 说明
 ```
@@ -13,7 +13,12 @@ production 生产环境分支 pre-production 下游分支
 ```
 git clone git@git.yokitalk.com:luojingying/datitong-live.git
 cd datitong-live
+
 composer install --prefer-dist
+
+// 线上环境
+composer install --no-dev --prefer-dist
+
 cp .env.example .env
 
 vim .env // 编辑 .env，填写数据库，域名等信息
@@ -48,4 +53,13 @@ php artisan admin:menu-iseed
 
 // 更新菜单
 php artisan admin:menu-update
+```
+
+## 在网页上查看数据库表结构
+```
+// 执行下面的命令
+php artisan vendor:publish --provider=Jormin\\DDoc\\DDocServiceProvider --force
+
+// 访问下面的地址
+xxx.com/ddoc
 ```

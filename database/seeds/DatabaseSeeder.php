@@ -15,7 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AdminRolesTableSeeder::class);
         $this->call(AdminPermissionsTableSeeder::class);
         $this->call(AdminMenuTableSeeder::class);
-        $this->call(AdminUserPermissionsTableSeeder::class);
         $this->call(AdminRoleUsersTableSeeder::class);
         $this->call(AdminRolePermissionsTableSeeder::class);
         $this->call(AdminRoleMenuTableSeeder::class);
